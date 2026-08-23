@@ -1,0 +1,72 @@
+/* Main App Background */
+.stApp {
+    background-color: #FAF6F0 !important;
+    color: #2A1810 !important;
+}
+
+/* Ensure all text elements are readable dark espresso */
+p, span, label, div, h1, h2, h3, h4, h5, h6, .stMarkdown {
+    color: #2A1810 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar Background & High-Contrast Text */
+section[data-testid="stSidebar"] {
+    background-color: #3E2723 !important;
+}
+
+section[data-testid="stSidebar"] *, 
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span {
+    color: #FFFFFF !important;
+}
+
+/* Text Inputs, Number Inputs, and Select Boxes */
+.stTextInput input, .stNumberInput input, div[data-baseweb="select"] div {
+    background-color: #FFFFFF !important;
+    color: #1A0C06 !important;
+    border: 2px solid #6D4C41 !important;
+    font-weight: 600 !important;
+}
+
+/* Primary Action Buttons */
+.stButton>button {
+    background: linear-gradient(135deg, #5D4037 0%, #3E2723 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 0.6rem 1.2rem !important;
+    font-weight: bold !important;
+    font-size: 1rem !important;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(135deg, #3E2723 0%, #21120B 100%) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+}
+
+/* Metric Display */
+div[data-testid="stMetricValue"] {
+    color: #3E2723 !important;
+    font-size: 2.2rem !important;
+    font-weight: bold !important;
+}
+
+/* Tab Headers */
+button[data-baseweb="tab"] {
+    color: #5D4037 !important;
+    font-weight: bold !important;
+    font-size: 1.05rem !important;
+}
+
+button[aria-selected="true"] {
+    border-bottom-color: #3E2723 !important;
+    color: #21120B !important;
+}
+
+/* Dataframe Table Text Contrast */
+div[data-testid="stDataFrame"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #D7CCC8 !important;
+}
