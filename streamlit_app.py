@@ -180,7 +180,6 @@ elif page == "Admin Dashboard":
     if st.session_state.user_role != "Admin" or not st.session_state.authenticated:
         st.error("⛔ **Access Restricted**")
         st.warning("You must log in as Admin to access the master database and management analytics.")
-        st.info("👉 Select **Admin** under 'Select Access Mode' in the left sidebar and enter the password: `Std_Performance321`")
     else:
         st.title("👨‍💼 Admin Dashboard & Master Database")
         
