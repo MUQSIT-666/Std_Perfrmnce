@@ -167,7 +167,7 @@ elif page == "Student Prediction":
 elif page == "Admin Dashboard":
     if st.session_state.user_role != "Admin" or not st.session_state.authenticated:
         st.error("⛔ Access Denied: You must be authenticated as Admin to view this dashboard.")
-        st.info("Please select 'Admin' in the sidebar and enter the password (`Std_Performance321`).")
+        st.info("Please select 'Admin' in the sidebar and enter the password.")
     else:
         st.title("👨‍💼 Admin Analytics & Master Database Management")
         
