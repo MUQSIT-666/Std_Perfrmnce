@@ -12,7 +12,17 @@ st.set_page_config(
 # -----------------------------------------------------------------------------
 # HIGH-CONTRAST CUSTOM CSS (DARK BROWN TEXT ON LIGHT CREAM BACKGROUND)
 # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# LOAD EXTERNAL CSS FILE
+# -----------------------------------------------------------------------------
+def load_css(css_file):
+    with open(css_file) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+try:
+    load_css("Std.css")
+except FileNotFoundError:
+    pass  # Fallback gracefully if CSS file is missing
 # -----------------------------------------------------------------------------
 # SESSION STATE INITIALIZATION (Database & Auth Store)
 # -----------------------------------------------------------------------------
