@@ -12,7 +12,7 @@ p, span, label, div, h1, h2, h3, h4, h5, h6, .stMarkdown {
 
 /* Sidebar Background & High-Contrast Text */
 section[data-testid="stSidebar"] {
-    background-color: #4e1719 !important;
+    background-color: #3E2723 !important;
 }
 
 section[data-testid="stSidebar"] *, 
@@ -42,7 +42,7 @@ section[data-testid="stSidebar"] span {
 }
 
 .stButton>button:hover {
-    background: linear-gradient(135deg, #72423c 0%, #21120B 100%) !important;
+    background: linear-gradient(135deg, #3E2723 0%, #21120B 100%) !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
 }
 
@@ -62,11 +62,11 @@ button[data-baseweb="tab"] {
 
 button[aria-selected="true"] {
     border-bottom-color: #3E2723 !important;
-    color: #f3efed !important;
+    color: #21120B !important;
 }
 
 /* Dataframe Table Text Contrast */
 div[data-testid="stDataFrame"] {
-    background-color: #efe2e2 !important;
+    background-color: #FFFFFF !important;
     border: 1px solid #D7CCC8 !important;
 }
